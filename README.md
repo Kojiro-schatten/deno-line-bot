@@ -20,6 +20,8 @@ deno --version
 # 実行方法
 
 denoにはPermissionが定義されている。
+
+```
 ・read ファイル読み込みを許可
 ・write ファイル書き込みを許可
 ・net ネットワークアクセスを許可
@@ -27,6 +29,7 @@ denoにはPermissionが定義されている。
 ・hrtime 高精度時刻へのアクセスを許可
 ・run 外部コマンド実行を許可
 ・plugin プラグインの読み込みを許可
+```
 
 開発環境でも、allowする必要があり、下記のようにするとすんなり開発しやすい。
 
@@ -45,8 +48,10 @@ https://developers.line.biz/console/channel/2005567469
 にアクセスできるかどうかを確認すること。必要に応じて、gmailを共有してください。
 
 # ローカル開発に関して
-どういう開発の仕方がやりやすいのか模索中だが、現状は
+どういう開発の仕方がやりやすいのか模索中だが、現状は下記のようにして行っている。
+
+```
 ・Ngrokでローカルサーバーを立ち上げ
 ・Ngrokでの生成URLをLINE Messaging APIのwebhookにセット
 ・Ngrokのinterface urlでリクエストの確認
-を行っている。
+```
